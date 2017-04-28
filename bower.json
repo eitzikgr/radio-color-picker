@@ -1,0 +1,15 @@
+{
+  "name": "radio-color-picker",
+  "main": "radio-color-picker.js",
+  "homepage": "https://github.com/eitzikgr/radio-color-picker",
+  "authors": [
+    "itzik <eitzikgr@gmail.com>"
+  ],
+  "description": "radio to select colors or promt color picker",
+  "keywords": [
+    "radio",
+    "color-picker",
+    "radio-input"
+  ],
+  "license": "MIT"
+}

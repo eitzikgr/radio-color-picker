@@ -1,0 +1,74 @@
+radio-color-picker {
+  .radio-color-picker-outer-item {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
+    //position: relative;
+    top: 22px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd), -webkit-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd), linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+    cursor: pointer;
+    &.selected{
+      cursor:default;
+    }
+    &.s-32 {
+      width: 32px;
+      height: 32px;
+      md-icon {
+        font-size: 20px !important;
+        width: 20px !important;
+        height: 20px !important;
+        min-width: 20px !important;
+        min-height: 20px !important;
+        line-height: 20px !important;
+        margin: 15%;
+      }
+    }
+
+    &.s-48 {
+      width: 48px;
+      height: 48px;
+      md-icon {
+        font-size: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+        min-width: 24px !important;
+        min-height: 24px !important;
+        line-height: 24px !important;
+        margin: 23%;
+      }
+    }
+    &.s-64 {
+      width: 64px;
+      height: 64px;
+      md-icon {
+        font-size: 32px !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        line-height: 32px !important;
+        margin: 23%;
+      }
+    }
+
+    .radio-color-picker-result,.radio-color-picker-add {
+      width: 100%;
+      height: 100%;
+
+    }
+    .radio-color-picker-result{
+      md-icon {
+        color: white;
+      }
+    }
+  }
+
+}

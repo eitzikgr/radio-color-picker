@@ -1,0 +1,24 @@
+<md-content  >
+  <label>{{RadioCPicker.settings.title}}</label>
+  <div layout="{{RadioCPicker.settings.layout}}" layout-wrap  class=""  flex>
+
+    <div ng-repeat="color in RadioCPicker.settings.colors" class="radio-color-picker-outer-item m-8"  ng-class="RadioCPicker.settings.size" ng-class="{'selected':color==RadioCPicker.scope.model}"  ng-click="RadioCPicker.selectColors(color)">
+      <div class="radio-color-picker-result" value="{{color}}" style="background:{{color}}" >
+        <div flex>
+        <md-icon ng-show="color==RadioCPicker.scope.model" style="color:{{RadioCPicker.iconSelectColor}}" md-font-icon="icon-eyedropper"></md-icon>
+        </div>
+      </div>
+
+    </div>
+    <div class="radio-color-picker-outer-item m-8" ng-class="RadioCPicker.settings.size" ng-click="RadioCPicker.openMdDialogColors()">
+      <div class="radio-color-picker-add " >
+        <md-icon class="tumb-selected" md-font-icon="icon-plus"></md-icon>
+      </div>
+    </div>
+    <!--<p style="background-color: {{color}}">{{color}}</p>-->
+  </div>
+
+  <div ng-hide="true" id="RadioCPicker_md-color-picker"  md-color-picker ng-model="RadioCPicker.md_color_picker" md-color-alpha-channel="false"></div>
+</md-content>
+
+<!---->
